@@ -23,6 +23,7 @@
 
 	<!-- Modules -->
 	<modules>
+		<module>java-path-core-basic</module>
 	</modules>
 
 	<!-- Properties/Variables -->
