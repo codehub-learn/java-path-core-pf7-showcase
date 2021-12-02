@@ -5,7 +5,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
-import java.util.Objects;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -16,7 +15,6 @@ public class Product {
 	private BigDecimal price;
 
 	public String greetings(){
-		return "Hello from "+ name+ " from class Product";
+		return "Hello "+ name+ " from class Product";
 	}
-
 }

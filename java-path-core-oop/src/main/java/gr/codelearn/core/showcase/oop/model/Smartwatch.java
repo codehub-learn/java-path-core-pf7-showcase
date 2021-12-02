@@ -13,4 +13,9 @@ public class Smartwatch extends ElectronicDevices{
 	private String resolution;
 	private Boolean waterproof;
 	private String typeOfBracelet;
+
+	@Override
+	public String greetings(){
+		return "Hello "+ super.getName() + " from class Smartwatch";
+	}
 }

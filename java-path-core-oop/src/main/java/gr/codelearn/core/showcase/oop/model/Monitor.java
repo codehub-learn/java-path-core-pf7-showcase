@@ -5,7 +5,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
-import java.math.BigDecimal;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -14,4 +13,9 @@ import java.math.BigDecimal;
 public class Monitor extends ElectronicDevices{
 	private Integer refreshRate;
 	private String resolution;
+
+	@Override
+	public String greetings(){
+		return "Hello "+ super.getName() + " from class Monitor";
+	}
 }

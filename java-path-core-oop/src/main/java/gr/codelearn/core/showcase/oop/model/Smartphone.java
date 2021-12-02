@@ -21,20 +21,16 @@ public class Smartphone extends ElectronicDevices{
 
 	@Override
 	public String greetings(){
-		return "Hello from "+ super.getName() + " from class Smartphone";
+		return "Hello "+ super.getName() + " from class Smartphone";
 	}
 
 	public void doSomething(String value){
-		logger.info("Do something with value {}", value);
-	}
-
-	public void doSomething(String value,String value2){
-		logger.info("Do something with value1 {} and value2 {}", value, value2);
+		logger.info("Do something with value {}", new StringBuilder(value).reverse());
 	}
 
 	public void doSomething(String... values){
 		for (final String value : values) {
-			logger.info("The value is {}",value);
+			logger.info("The length of {} is {}",value, value.length());
 		}
 	}
 
@@ -43,5 +39,4 @@ public class Smartphone extends ElectronicDevices{
 			logger.info("The value is {}",value);
 		}
 	}
-
 }
