@@ -25,6 +25,7 @@
 	<modules>
 		<module>java-path-core-basic</module>
 		<module>java-path-core-maven</module>
+		<module>java-path-core-oop</module>
 	</modules>
 
 	<!-- Properties/Variables -->
