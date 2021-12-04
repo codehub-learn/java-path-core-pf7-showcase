@@ -1,15 +1,14 @@
-import com.thedeanda.lorem.Lorem;
-import com.thedeanda.lorem.LoremIpsum;
+package gr.codelearn.core.showcase.databases;
+
 import org.h2.tools.Server;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.sql.*;
 
-
 public class DataBaseSimple {
     private static final Logger logger = LoggerFactory.getLogger(DataBaseSimple.class);
-    private static final Lorem generator = LoremIpsum.getInstance();
+
 
     private static final String DB_CONNECTION_URL_MEMORY_MODE = "jdbc:h2:mem:sample";
     private static final String DB_USERNAME = "sa";
