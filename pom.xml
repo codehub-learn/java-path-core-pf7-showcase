@@ -27,6 +27,7 @@
 		<module>java-path-core-maven</module>
 		<module>java-path-core-oop</module>
         <module>java-path-core-databases</module>
+        <module>java-path-core-exceptions</module>
     </modules>
 
 	<!-- Properties/Variables -->
