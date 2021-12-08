@@ -2,27 +2,38 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
 		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<!-- Packaging -->
+	<modelVersion>4.0.0</modelVersion>
+	<packaging>jar</packaging>
+
+	<!-- Versioning -->
+	<artifactId>java-path-core-database</artifactId>
 	<parent>
-		<artifactId>java-path-core</artifactId>
 		<groupId>gr.codelearn</groupId>
+		<artifactId>java-path-core</artifactId>
 		<version>2021.1.0</version>
 	</parent>
-	<modelVersion>4.0.0</modelVersion>
 
-	<artifactId>java-path-core-databases</artifactId>
+	<!-- Meta-data -->
+	<name>[${project.artifactId}]</name>
+	<description>Java Learning @ Development Path, Core module, Database connectivity demonstration</description>
 
-	<properties>
-		<maven.compiler.source>17</maven.compiler.source>
-		<maven.compiler.target>17</maven.compiler.target>
-	</properties>
-
+	<!-- Dependencies -->
 	<dependencies>
-		<!-- https://mvnrepository.com/artifact/com.h2database/h2 -->
 		<dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
 			<version>1.4.200</version>
 		</dependency>
+		<dependency>
+			<groupId>com.zaxxer</groupId>
+			<artifactId>HikariCP</artifactId>
+			<version>4.0.3</version>
+		</dependency>
+		<dependency>
+			<groupId>com.thedeanda</groupId>
+			<artifactId>lorem</artifactId>
+			<version>2.1</version>
+		</dependency>
 	</dependencies>
-
 </project>
