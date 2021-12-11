@@ -28,6 +28,8 @@
 		<module>java-path-core-oop</module>
         <module>java-path-core-databases</module>
         <module>java-path-core-exceptions</module>
+        <module>java-path-core-despattern</module>
+        <module>java-path-core.generics</module>
     </modules>
 
 	<!-- Properties/Variables -->
