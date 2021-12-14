@@ -44,7 +44,7 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
 		<!-- Library versions-->
-		<log4j.version>2.14.1</log4j.version>
+		<log4j.version>2.15.0</log4j.version>
 		<slf4j.version>1.7.32</slf4j.version>
 		<disruptor-maven-plugin.version>3.4.4</disruptor-maven-plugin.version>
 	</properties>
@@ -131,6 +131,23 @@
 										<version>${maven.version}</version>
 									</requireMavenVersion>
 								</rules>
+							</configuration>
+						</execution>
+						<execution>
+							<id>ban-bad-log4j-versions</id>
+							<phase>validate</phase>
+							<goals>
+								<goal>enforce</goal>
+							</goals>
+							<configuration>
+								<rules>
+									<bannedDependencies>
+										<excludes>
+											<exclude>org.apache.logging.log4j:log4j-core:(,2.15.0)</exclude>
+										</excludes>
+									</bannedDependencies>
+								</rules>
+								<fail>true</fail>
 							</configuration>
 						</execution>
 					</executions>
